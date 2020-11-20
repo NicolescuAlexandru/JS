@@ -1,3 +1,9 @@
+//How to use it
+//new - add a new To Do entry
+//delete - remove a specific entry
+//list - list all entries
+//quit - quit the app
+
 let input = prompt('What would you like to add?');
 const todos = [];
 

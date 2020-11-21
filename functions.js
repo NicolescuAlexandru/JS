@@ -52,12 +52,32 @@
 // console.log(lastElement(arr));
 
 //Function that returns the days of a week by index
-const daysOfWeek = [null, 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
-function returnDay(num) {
-    if (num < 1 || num > 7) {
-        return null;
-    } else {
-        return daysOfWeek[num];
-    }
-}
+// const daysOfWeek = [null, 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
+// function returnDay(num) {
+//     if (num < 1 || num > 7) {
+//         return null;
+//     } else {
+//         return daysOfWeek[num];
+//     }
+// }
 
+// //Explanation of Block Scope
+// //The word **var** allows you to access a variable that is inside any block (not a function!)
+// if (bird !== 'eagle') {
+//     var bird = 'pigeon';
+// }
+// console.log(bird); //prints 'pigeon' from inside the conditional block
+
+//Explanation of Fuctions Scope
+//You cannout access a variable scoped inside a functin outside of this function
+
+// let bird = 'eagle'
+// function birdChoose() {
+//     let bird = 'pigeon';
+//     return bird;
+// }
+
+// console.log(bird);
+// birdChoose();
+// console.log(bird);
+// //both of them will print 'eagle';

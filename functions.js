@@ -81,3 +81,77 @@
 // birdChoose();
 // console.log(bird);
 // //both of them will print 'eagle';
+
+//Lexical Scoping and Functions
+// function outer() {
+//     let name = 'Alex';
+//     function inner() {
+//         alert(`Hello ${name}!`);
+//     }
+//     inner();
+// }
+// outer();
+//This will alert 'Hello Alex!'
+
+//Function Expressions
+// const square = function (num) {
+//     return num * num;
+// }
+// square(7);
+
+// //Higher Order Functions
+// function callTwice(func) {
+//     func();
+//     func();
+// }
+
+// function rollDie() {
+//     const roll = Math.floor(Math.random() * 6 + 1);
+//     console.log(roll);
+// }
+
+// callTwice(rollDie);
+
+//Returning functions
+// const isNumBetween = function (min, max) {
+//     return function (num) {
+//         return num >= min && num <= max;
+//     }
+// }
+
+// console.log(isNumBetween(30, 40)(35)); //prints true
+// //OR
+// const isChild = isNumBetween(0, 18);
+// console.log(isChild(17)); //prints true
+
+// //Methods (functions as properties)
+// const myMath = {
+//     PI: 3.14,
+//     square: function (num) {
+//         return num * num;
+//     },
+//     cube: function (num) {
+//         return num ** 3;
+//     },
+//     add: function (x, y) {
+//         return x + y;
+//     }
+// }
+// console.log(myMath.square(myMath.add(3, 4)));
+// //This prints the square of the sum of 3 and 4, which is 49
+// console.log(myMath.cube(myMath.add(3, 4)));
+// //This prints the cube of the sum of 3 and 4, which is 343
+
+// //Method shorthand: the object above can be written as:
+// const myMathShorter = {
+//     PI: 3.14,
+//     square(num) {
+//         return num * num;
+//     },
+//     cube(num) {
+//         return num ** 3;
+//     },
+//     add: function (x, y) {
+//         return x + y;
+//     }
+// }

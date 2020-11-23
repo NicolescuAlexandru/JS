@@ -155,3 +155,19 @@
 //         return x + y;
 //     }
 // }
+
+//The keyword this
+// const myDog = {
+//     name: "Jack",
+//     color: "black",
+//     ears: "long",
+//     bark() {
+//         console.log(`${this.name} barks loudly!`)
+//     },
+//     entity() {
+//         console.log(this);
+//     }
+// }
+// myDog.bark(); //Prints 'Jack barks loudly'!
+// myDog.entity(); //Prints out the object myDog
+// console.log(this); //Prints out all the possible window functions

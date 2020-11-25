@@ -103,3 +103,10 @@
 // console.log(goodMoviesTitle);
 // const badMoviesTitle = movies.filter(movie => (movie.score < 80)).map(movie => (movie.title));
 // console.log(badMoviesTitle);
+
+// //The every and some methods
+// const allEven = numbers.every(num => (num % 2 === 0));
+// console.log(allEven); //false, not all of them are even
+
+// const someEven = numbers.some(num => (num % 2 === 0));
+// console.log(someEven); //true, some numbers are even

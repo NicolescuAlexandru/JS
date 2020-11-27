@@ -1,0 +1,11 @@
+//Algorithm for reversing a string
+
+function reverseString(str) {
+  let reverseStr = '';       //initialize an empty string
+  for (let i = str.length - 1; i >= 0; i--) {      //for any iteration, beginning with the last character, add the character to the new empty string
+    reverseStr += str[i];
+  }
+  return reverseStr;     //return the new reversed string
+}
+
+reverseString("Hello");     //example
